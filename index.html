@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>风雪筑路</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #87ceeb;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .story {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        .comment-section, .submission-form {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        .comment, .submission {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>风雪筑路</h1>
+    </header>
+    <div class="container">
+        <h2>最新故事</h2>
+        <div class="story">
+            <h3>故事标题</h3>
+            <p>太元年间，临海有个巫师姓李，不知他来自何处。他能够占卜看相、制作符水...</p>
+        </div>
+        
+        <div class="comment-section">
+            <h3>评论区</h3>
+            <p>请登录后发表评论。</p>
+            <!-- 评论功能的具体实现需要后端支持 -->
+        </div>
+        
+        <div class="submission-form">
+            <h3>投稿</h3>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="title">标题:</label><br>
+                <input type="text" id="title" name="title" required><br>
+                <label for="author">作者:</label><br>
+                <input type="text" id="author" name="author" required><br>
+                <label for="source">出处:</label><br>
+                <input type="text" id="source" name="source"><br>
+                <label for="content">正文:</label><br>
+                <textarea id="content" name="content" rows="4" required></textarea><br>
+                <label for="file">上传文件:</label><br>
+                <input type="file" id="file" name="file"><br>
+                <input type="submit" value="提交">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
